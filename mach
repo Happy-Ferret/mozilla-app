@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export MOZCONFIG="../mozconfig"
+
 if [ ! -h gecko-dev/app ]; then
   ln -s .. gecko-dev/app;
 fi
