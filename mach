@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ ! -h gecko-dev/app ]; then
+  ln -s .. gecko-dev/app;
+fi
+
+cd gecko-dev && exec ./mach "$@"
